@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0a0e27;
+  --text: #e0e6ed;
+  --accent: #00d9ff;
+  --secondary: #1a1f3a;
+  --border: #2a3150;
+}
+
+body {
+  font-family: 'Courier New', monospace;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+header {
+  padding: 2rem;
+  border-bottom: 2px solid var(--border);
+  position: relative;
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+.dot:nth-child(2) {
+  background: #ffbd2e;
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  background: #ff5f57;
+  animation-delay: 0.4s;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  animation: slideIn 0.6s ease-out;
+}
+
+.subtitle {
+  color: #8892a6;
+  font-size: 1rem;
+  animation: slideIn 0.8s ease-out;
+}
+
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1.2rem;
+  background: var(--accent);
+  margin-left: 4px;
+  animation: blink 1s infinite;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: var(--secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  opacity: 0;
+  animation: fadeInUp 0.6s forwards;
+}
+
+section:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+section:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+section:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+h2 {
+  color: var(--accent);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+h2::before {
+  content: '>';
+  color: var(--accent);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.skill {
+  padding: 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skill:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 217, 255, 0.2);
+}
+
+.projects-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.project {
+  padding: 1.5rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.project:hover {
+  border-color: var(--accent);
+  transform: translateX(8px);
+}
+
+.project h3 {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.project p {
+  color: #8892a6;
+  margin-bottom: 1rem;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  padding: 0.25rem 0.75rem;
+  background: var(--secondary);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+
+.contact-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  padding: 0.75rem 1.5rem;
+  background: var(--bg);
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.contact-link:hover {
+  background: var(--accent);
+  color: var(--bg);
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #8892a6;
+  border-top: 2px solid var(--border);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .contact-links {
+    flex-direction: column;
+  }
+}
