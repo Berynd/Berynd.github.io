@@ -19,18 +19,6 @@ window.addEventListener('scroll', () => {
     : 'rgba(13, 27, 46, 0.92)';
 });
 
-// Tabs (Annexes)
-const tabBtns   = document.querySelectorAll('.tab-btn');
-const tabPanels = document.querySelectorAll('.tab-panel');
-
-tabBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const target = btn.dataset.tab;
-    tabBtns.forEach(b => b.classList.toggle('active', b === btn));
-    tabPanels.forEach(p => p.classList.toggle('active', p.id === target));
-  });
-});
-
 // Reveal on scroll
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
