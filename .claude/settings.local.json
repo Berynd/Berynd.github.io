@@ -2,7 +2,17 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:github.com)",
-      "WebFetch(domain:api.github.com)"
+      "WebFetch(domain:api.github.com)",
+      "Bash(python -c ':*)",
+      "Bash(py -c ':*)",
+      "Bash(where python:*)",
+      "Bash(ls \"/c/Python\"*)",
+      "Read(//c/Users/blueb/AppData/Local/Programs/**)",
+      "Bash(mkdir -p /tmp/xlsx_extract)",
+      "Read(//tmp/**)",
+      "Bash(unzip -o \"/c/Users/blueb/Downloads/tableau_final.xlsx\")",
+      "Bash(cp \"/c/Users/blueb/Downloads/GABREIL-7 \\(1\\).pdf\" /c/Users/blueb/PhpstormProjects/Portfolio/assets/CV-Gabriel-Berinde.pdf)",
+      "Bash(cp \"/c/Users/blueb/Downloads/tableau_final.xlsx\" /c/Users/blueb/PhpstormProjects/Portfolio/assets/tableau-synthese.xlsx)"
     ]
   }
 }
