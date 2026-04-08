@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel Berinde — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">GB</span>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero">
+    <div class="hero-content">
+      <p class="hero-tag">Étudiant BTS SIO option SLAM</p>
+      <h1>Gabriel<br /><span>Berinde</span></h1>
+      <p class="hero-desc">
+        Développeur passionné, je recherche une <strong>alternance</strong> pour développer
+        mes compétences et contribuer activement aux projets de votre entreprise.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-outline">Me contacter</a>
+      </div>
+      <div class="hero-badges">
+        <span class="badge">PHP</span>
+        <span class="badge">Java</span>
+        <span class="badge">Symfony</span>
+        <span class="badge">SQL</span>
+        <span class="badge">HTML / CSS</span>
+        <span class="badge">JS</span>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container two-col">
+      <div class="about-text">
+        <h2 class="section-title">À propos</h2>
+        <p>
+          Je suis <strong>Gabriel Berinde</strong>, étudiant en <strong>BTS SIO option SLAM</strong>
+          au Lycée UFA Robert Schuman (2024 – 2026), après un Bac Pro SN option RISC obtenu en 2024.
+        </p>
+        <p>
+          Mon parcours m'a permis de développer des compétences solides aussi bien en
+          <strong>développement logiciel</strong> (PHP, Java, Symfony) qu'en
+          <strong>infrastructure réseau</strong> (Linux, Cisco, VMware).
+        </p>
+        <div class="about-langs">
+          <div class="lang-pill">
+            <span class="flag">🇷🇴</span> Roumain <span class="level">Natif</span>
+          </div>
+          <div class="lang-pill">
+            <span class="flag">🇬🇧</span> Anglais <span class="level">Courant</span>
+          </div>
+          <div class="lang-pill">
+            <span class="flag">🇫🇷</span> Français <span class="level">Courant</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-cards">
+        <div class="info-card">
+          <div class="info-icon">📍</div>
+          <div>
+            <div class="info-label">Localisation</div>
+            <div class="info-value">93150 Le Blanc-Mesnil</div>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">🎓</div>
+          <div>
+            <div class="info-label">Formation</div>
+            <div class="info-value">BTS SIO SLAM — 2024/2026</div>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">🎮</div>
+          <div>
+            <div class="info-label">Centres d'intérêt</div>
+            <div class="info-value">Jeux vidéo · Boxe · Musculation</div>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">💼</div>
+          <div>
+            <div class="info-label">Disponibilité</div>
+            <div class="info-value">Alternance recherchée</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title centered">Compétences techniques</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <div class="skill-group-icon">💻</div>
+          <h3>Développement</h3>
+          <div class="skill-tags">
+            <span>PHP</span>
+            <span>Java</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>SQL</span>
+            <span>MariaDB</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-icon">⚙️</div>
+          <h3>Frameworks & Outils</h3>
+          <div class="skill-tags">
+            <span>Symfony</span>
+            <span>Bootstrap</span>
+            <span>jQuery</span>
+            <span>JavaFX</span>
+            <span>JetBrains Suite</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-icon">🌐</div>
+          <h3>Réseaux & Systèmes</h3>
+          <div class="skill-tags">
+            <span>Linux</span>
+            <span>Windows Server</span>
+            <span>Firewall</span>
+            <span>Cisco</span>
+            <span>Packet Tracer</span>
+            <span>Adressage IP</span>
+            <span>ADSL</span>
+            <span>Dlink / Netgear</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-icon">🖥️</div>
+          <h3>Virtualisation</h3>
+          <div class="skill-tags">
+            <span>VMware</span>
+            <span>3com</span>
+          </div>
+        </div>
+
+      </div>
+
+      <h3 class="subsection-title centered">Soft Skills</h3>
+      <div class="soft-skills">
+        <div class="soft-card"><span>👂</span> À l'écoute</div>
+        <div class="soft-card"><span>💬</span> Communication</div>
+        <div class="soft-card"><span>🤝</span> Travail d'équipe</div>
+        <div class="soft-card"><span>🔄</span> Adaptabilité</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title centered">Projets GitHub</h2>
+      <p class="section-sub centered">
+        Retrouvez tous mes projets sur
+        <a href="https://github.com/Berynd" target="_blank" rel="noopener" class="link">github.com/Berynd</a>
+      </p>
+      <div class="projects-grid">
+
+        <a class="project-card featured" href="https://github.com/Berynd/LprsBySN" target="_blank" rel="noopener">
+          <div class="project-lang php">PHP</div>
+          <h3>LprsBySN</h3>
+          <p>Projet pour l'épreuve E6, réalisé en collaboration avec d'anciens étudiants SN. Application web développée en PHP.</p>
+          <div class="project-footer">
+            <span class="project-tag">PHP</span>
+            <span class="project-tag">E6</span>
+            <span class="arrow">→</span>
+          </div>
+        </a>
+
+        <a class="project-card featured" href="https://github.com/Berynd/Lprs-by-SN" target="_blank" rel="noopener">
+          <div class="project-lang php">PHP</div>
+          <h3>Lprs-by-SN</h3>
+          <p>Projet PHP pour l'épreuve E6 — groupe collaboratif d'anciens étudiants de la filière SN.</p>
+          <div class="project-footer">
+            <span class="project-tag">PHP</span>
+            <span class="project-tag">Collaboratif</span>
+            <span class="arrow">→</span>
+          </div>
+        </a>
+
+        <a class="project-card" href="https://github.com/Berynd/TodoListFX" target="_blank" rel="noopener">
+          <div class="project-lang java">Java</div>
+          <h3>TodoListFX</h3>
+          <p>Application de gestion de tâches développée avec JavaFX.</p>
+          <div class="project-footer">
+            <span class="project-tag">Java</span>
+            <span class="project-tag">JavaFX</span>
+            <span class="arrow">→</span>
+          </div>
+        </a>
+
+        <a class="project-card" href="https://github.com/Berynd/LprsFX" target="_blank" rel="noopener">
+          <div class="project-lang java">Java</div>
+          <h3>LprsFX</h3>
+          <p>Application JavaFX liée au projet LPRS.</p>
+          <div class="project-footer">
+            <span class="project-tag">Java</span>
+            <span class="project-tag">JavaFX</span>
+            <span class="arrow">→</span>
+          </div>
+        </a>
+
+        <a class="project-card" href="https://github.com/Berynd/tiktaktoe" target="_blank" rel="noopener">
+          <div class="project-lang java">Java</div>
+          <h3>TikTakToe</h3>
+          <p>Jeu de morpion implémenté en Java.</p>
+          <div class="project-footer">
+            <span class="project-tag">Java</span>
+            <span class="project-tag">Jeu</span>
+            <span class="arrow">→</span>
+          </div>
+        </a>
+
+        <a class="project-card" href="https://github.com/Berynd/Vol" target="_blank" rel="noopener">
+          <div class="project-lang css">CSS</div>
+          <h3>Vol</h3>
+          <p>Projet web front-end avec HTML/CSS.</p>
+          <div class="project-footer">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="arrow">→</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title centered">Parcours</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2024 — 2026</div>
+          <div class="timeline-content">
+            <span class="tl-type formation">Formation</span>
+            <h3>BTS SIO option SLAM</h3>
+            <div class="tl-place">Lycée UFA Robert Schuman</div>
+            <p>Solutions Logicielles et Applications Métiers — développement d'applications, gestion de bases de données, conception de systèmes d'information.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Terminal — 2024</div>
+          <div class="timeline-content">
+            <span class="tl-type stage">Stage</span>
+            <h3>Stage de Terminal</h3>
+            <div class="tl-place">Chriservice, Clamart (92)</div>
+            <p>Assistance aux techniciens pour l'installation et la configuration de postes informatiques.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2021 — 2024</div>
+          <div class="timeline-content">
+            <span class="tl-type formation">Formation</span>
+            <h3>Bac Pro SN option C (RISC)</h3>
+            <div class="tl-place">Lycée UFA Robert Schuman</div>
+            <p>Réseaux Informatiques et Systèmes Communicants — installation, configuration, maintenance des équipements réseaux et systèmes.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Première</div>
+          <div class="timeline-content">
+            <span class="tl-type stage">Stage</span>
+            <h3>Stage de Première</h3>
+            <div class="tl-place">École Saint-Joseph et Saint-Marie, Stains (93)</div>
+            <p>Dépannage des postes informatiques et des périphériques (imprimantes, tableaux interactifs).</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Seconde</div>
+          <div class="timeline-content">
+            <span class="tl-type stage">Stage</span>
+            <h3>Stage de Seconde</h3>
+            <div class="tl-place">Chriservice, Clamart (92)</div>
+            <p>Support utilisateur pour la résolution de problèmes techniques simples.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container contact-inner">
+      <h2 class="section-title centered">Contact</h2>
+      <p class="section-sub centered">
+        Je suis disponible pour une <strong>alternance</strong> — n'hésitez pas à me contacter !
+      </p>
+      <div class="contact-cards">
+        <a href="mailto:gabriel.berinde93@icloud.com" class="contact-card">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">gabriel.berinde93@icloud.com</div>
+        </a>
+        <a href="tel:+33766761733" class="contact-card">
+          <div class="contact-icon">📞</div>
+          <div class="contact-label">Téléphone</div>
+          <div class="contact-value">+33 7 66 76 17 33</div>
+        </a>
+        <a href="https://github.com/Berynd" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon">
+            <svg height="28" viewBox="0 0 16 16" width="28" fill="currentColor">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+              -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2
+              -3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64
+              -.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08
+              2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01
+              1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </div>
+          <div class="contact-label">GitHub</div>
+          <div class="contact-value">github.com/Berynd</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 Gabriel Berinde</span>
+      <span>Le Blanc-Mesnil, France</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
